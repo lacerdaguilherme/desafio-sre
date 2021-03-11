@@ -8,8 +8,13 @@ services:
     restart: always
     volumes:
       - ./mysql/data:/var/lib/mysql
+      - ./mysql/init-files:/docker-entrypoint-initdb.d
     env_file:
       - ./back/.env
+    expose:
+      - 3306
+    ports:
+      - "3306:3306" 
   backend:
     image: lacerdaguilherme/back
     container_name: backend
