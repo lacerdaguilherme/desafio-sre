@@ -7,3 +7,5 @@ create table preferences (
     `ip` VARCHAR(2),
     `preference` VARCHAR(2)
 );
+
+GRANT ALL ON preferences.preferences TO 'backend'@'%';
