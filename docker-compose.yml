@@ -1,0 +1,36 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5
+    container_name: mysql
+    logging:
+        driver: local    
+    restart: always
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    env_file:
+      - ./back/.env
+  backend:
+    image: lacerdaguilherme/back
+    container_name: backend
+    logging:
+        driver: local
+    restart: always
+    depends_on:
+      - mysql
+    env_file:
+      - ./back/.env
+    ports:
+      - "1234:1234"
+  frontend:
+    image: lacerdaguilherme/front
+    container_name: frontend
+    logging:
+        driver: local    
+    restart: always
+    depends_on:
+      - backend
+    env_file:
+      - ./front/.env
+    ports:
+      - "80:80"      
