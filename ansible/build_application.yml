@@ -1,10 +1,12 @@
 ---
 
 - hosts: localhost
+  vars:
+      app_path: 
 
   tasks:
   - name: "Build de imagem Backend"
-    command: docker build -t back {{ playbook_dir }}back/
+    command: docker build -t back {{ app_path }}/back/
     become: true
 
   - name: "Aplicando tag latest na imagem back"
@@ -16,7 +18,7 @@
     become: true
 
   - name: "Build de imagem frontend"
-    shell:  docker build -t front /home/guilherme/workspace/devmuch-sre-challange/front/ 
+    shell:  docker build -t front {{ app_path }}/front/ 
     become: true
 
   - name: "Aplicando tag latest na imagem front"
