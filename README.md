@@ -17,7 +17,16 @@ No mesmo diretório do clone, rodar o comando
 
 ## To - Do
 - [ ] Manifestos para deploy em Kubernetes
-- [ ] 
+- [ ] Backend - Corrigir Erros no console e em tela. 
+- [ ] Frontend - Corrigir Erro de timeout no post, mas salva conteúdo
+- [ ] Mysql - Melhorar no script de criação do banco de dados a parte de permissões x variáveis de ambiente
+- [ ] Mysql - Melhorar segurança das credenciais de root e do usuário de aplicação
+- [ ] Vagrant - VM para desenvolvimento
+- [ ] Terraform - Criação de VM
+- [ ] Terraform - Criação de RDS (iniciado, mas não concluido)
+
+
+
 ------------
 
 
