@@ -4,7 +4,7 @@
 
   tasks:
   - name: "Build de imagem Backend"
-    shell:  docker build -t back /home/guilherme/workspace/devmuch-sre-challange/back/ 
+    command: docker build -t back {{ playbook_dir }}back/
     become: true
 
   - name: "Aplicando tag latest na imagem back"
