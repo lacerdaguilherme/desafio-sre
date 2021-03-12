@@ -9,7 +9,7 @@ Desafio SRE 03/2021
 2. Entrar no diretório do clone do repositório
 3. Executar playbook
 
-	ansible-playbook ansible/build_application.yml --extra-vars "app_path=<diretorio do clone>"
+	`ansible-playbook ansible/build_application.yml --extra-vars "app_path=<diretorio do clone>"`
 
 4.  As imagens serão construidas localmente e enviadas para `https://hub.docker.com/u/lacerdaguilherme `
 
@@ -17,9 +17,9 @@ Desafio SRE 03/2021
 No mesmo diretório do clone, rodar o comando
 		  `docker-compose up -d`
 
-## Repositório pessoal
+### Repositório pessoal
 Usei um repositório pessoal no Github para o desenvolvimento
-	https://github.com/lacerdaguilherme/desafio-sre
+            https://github.com/lacerdaguilherme/desafio-sre
 
 ## To - Do
 - [ ] Manifestos para deploy em Kubernetes
@@ -34,7 +34,8 @@ Usei um repositório pessoal no Github para o desenvolvimento
 
 
 ------------
-
+------------
+------------
 
 ## devmuch sre challenge - Instruções
 
