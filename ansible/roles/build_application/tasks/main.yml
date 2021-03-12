@@ -1,2 +1,17 @@
----
-# tasks file for build_application
+- name: "Build de imagem Backend"
+  raw:  docker build -t back ../back/ 
+
+- name: "Aplicando tag latest na imagem back"
+  raw: docker tag back:latest lacerdaguilherme/back:latest
+
+- name: "Push na imagem back para repositorio"
+  raw: docker push lacerdaguilherme/back:latest
+
+- name: "Build de imagem frontend"
+  raw:  docker build -t front ../front/ 
+
+- name: "Aplicando tag latest na imagem front"
+  raw: docker tag front:latest lacerdaguilherme/front:latest
+
+- name: "Push na imagem front para repositorio"
+  raw: docker push lacerdaguilherme/front:latest  
