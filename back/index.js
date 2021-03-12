@@ -5,7 +5,7 @@ const mysql = require('mysql');
 const app = express();
 const router = express.Router();
 
-const port = process.env.SERVICE_PORT || 3000;
+const port = process.env.SERVICE_PORT || 3000;  //trocada a porta no .env
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,7 +15,7 @@ const db = mysql.createConnection({
     user: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
     database: process.env.MYSQL_DB,
-    port: process.env.MYSQL_PORT
+    port: process.env.MYSQL_PORT //inserido MYSQL_PORT para fins de teste
 });
 
 db.connect();
