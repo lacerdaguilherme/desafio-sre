@@ -2,9 +2,9 @@ FROM node:10-alpine
 
 RUN mkdir -p /home/app
 
-COPY package.json index.js index.html /home/app/
-
 WORKDIR /home/app
+
+COPY package.json index.js index.html ./
 
 EXPOSE 80
 

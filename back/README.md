@@ -15,3 +15,7 @@
 `MYSQL_PASSWORD` = senha
 
 `MYSQL_DB` = nome da db
+
+## Bugs encontrados durante o desafio
+- [X] Falha de conexão ao banco de dados no início do container
+- [ ] Erros no console e em tela. 
