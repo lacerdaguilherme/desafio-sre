@@ -11,3 +11,7 @@
 `BACKEND_HOST` = hostname da aplicação back
 
 `BACKEND_PORT` = porta da aplicação back
+
+## Bugs encontrados durante o desafio
+- [ ] Erro de timeout no post, mas salva conteúdo
+- [ ] Erros no console e em tela.
