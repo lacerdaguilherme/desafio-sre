@@ -8,7 +8,9 @@ Desafio SRE 03/2021
         git clone https://github.com/delivery-much/sre-challenge.git
 2. Entrar no diretório do clone do repositório
 3. Executar playbook
-        ansible-playbook ansible/build_application.yml --extra-vars "app_path=/home/guilherme/workspace/sre-challange"
+
+ansible-playbook ansible/build_application.yml --extra-vars "app_path=<diretorio do clone>"
+
 4.  As imagens serão construidas localmente e enviadas para `https://hub.docker.com/u/lacerdaguilherme `
 
 ## Execução da aplicação
