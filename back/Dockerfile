@@ -17,5 +17,4 @@ EXPOSE 1234
 
 RUN npm install
 
-#CMD ["node", "index.js"]
 CMD dockerize -wait tcp://mysql:3306 -timeout 10s node index.js
