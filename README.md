@@ -4,6 +4,7 @@ Desafio SRE 03/2021
 ## Como realizar o build das imagens
 
 1. Clone do repositório
+
         git clone https://github.com/delivery-much/sre-challenge.git
 2. Entrar no diretório do clone do repositório
 3. Executar playbook
