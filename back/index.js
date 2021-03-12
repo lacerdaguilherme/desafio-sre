@@ -24,7 +24,7 @@ router.post('/', function (req, res) {
     db.query(`INSERT INTO ${process.env.MYSQL_DB} SET ?`,
         { ...req.body, ip: req.ip, id: 1 }, // salvar ip real do usuário
         function (err, result) {
-            if (err) throw err;
+            if (err)  console.log(err);
             return console.log('Saved.')
             res.send(result);
         }
